@@ -23,7 +23,7 @@
   document.getElementById('galeriaYoutube').href = cfg.youtube || '#';
 
   var ICONE_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
-  var ROTULO = { casamento: 'Casamento', ensaio: 'Ensaio', drone: 'Drone' };
+  var ROTULO = { casamento: 'Casamento', ensaio: 'Ensaio', evento: 'Evento', drone: 'Drone' };
 
   function escapar(t) {
     var d = document.createElement('div');

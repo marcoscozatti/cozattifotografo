@@ -10,7 +10,7 @@
 //  4. Copie um bloco { ... } abaixo e ajuste:
 //       pasta     -> o nome da pasta que você criou
 //       titulo    -> o nome que aparece no site
-//       categoria -> 'casamento', 'ensaio' ou 'drone'
+//       categoria -> 'casamento', 'ensaio', 'evento' ou 'drone'
 //       local / data / descricao -> opcionais
 //       capa      -> número da foto usada na capa do álbum
 //       fotos     -> a ordem das fotos. Escreva o número; acrescente ' largo' (foto deitada que
