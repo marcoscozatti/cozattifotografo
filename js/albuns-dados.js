@@ -33,6 +33,17 @@
 
 window.ALBUNS = [
   {
+    pasta: 'casamento-da-cida',
+    titulo: 'Casamento da Cida',
+    categoria: 'casamento',
+    local: '',
+    data: '',
+    descricao: 'Cerimônia na igreja: a entrada das alianças, a bênção no altar e o beijo dos noivos.',
+    capa: '10',
+    fotos: ['02 largo', '03', '05', '01 largo', '04 largo', '06 centro', '09', '08 largo', '07 largo', '10 largo']
+  },
+
+  {
     pasta: 'fundacao-casa',
     titulo: 'Fotos dos alunos da Fundação Casa',
     categoria: 'evento',
