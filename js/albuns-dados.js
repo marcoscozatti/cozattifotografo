@@ -26,6 +26,19 @@
 
 window.ALBUNS = [
   {
+    pasta: 'felipe-e-ellen',
+    titulo: 'Felipe e Ellen',
+    categoria: 'casamento',
+    local: '',
+    data: '',
+    descricao: 'Do preparo do noivo à festa: cerimônia ao ar livre, alianças, véu ao vento e muita alegria.',
+    capa: '10',
+    fotos: ['01 alto', '07 largo', '02 alto', '09 largo', '03 alto', '10 largo', '04 alto', '11 largo',
+            '05 alto', '12 largo', '06 alto', '13 largo', '08 alto', '14 largo', '16 alto', '19 largo',
+            '15 alto', '18 largo', '17 alto', '20 largo']
+  },
+
+  {
     pasta: 'rafaela-e-yuri',
     titulo: 'Rafaela e Yuri',
     categoria: 'casamento',
