@@ -53,6 +53,17 @@ window.ALBUNS = [
   },
 
   {
+    pasta: 'bernadete-e-valquiria',
+    titulo: 'Bernadete e Valquíria',
+    categoria: 'casamento',
+    local: '',
+    data: '',
+    descricao: 'Casamento civil com rosas cor-de-rosa, muitos sorrisos e um passeio pelo jardim.',
+    capa: '07',
+    fotos: ['07 largo', '02 largo', '05 alto', '04 largo', '03', '06 largo centro', '01']
+  },
+
+  {
     pasta: 'felipe-e-ellen',
     titulo: 'Felipe e Ellen',
     categoria: 'casamento',
