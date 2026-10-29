@@ -15,6 +15,9 @@
 //       capa      -> número da foto usada na capa do álbum
 //       fotos     -> a ordem das fotos. Escreva o número; acrescente ' largo' (foto deitada que
 //                    ocupa 2 colunas) ou ' alto' (foto em pé que ocupa 2 linhas) se quiser destacar.
+//                    Enquadramento: acrescente ' centro', ' baixo' ou ' topo' para escolher a parte da
+//                    foto que aparece na grade (o normal prioriza a parte de cima, onde ficam os rostos).
+//                    Ex.: '04 largo centro'
 //                    Atalho: se colocar só um número (ex.: fotos: 25), o site usa 01 até 25 em ordem.
 //       colunas   -> opcional. Quantas colunas a grade usa no computador (o normal é 4).
 //                    Ex.: 5 fotos em pé com ' alto' ficam perfeitas com colunas: 5.
@@ -25,6 +28,17 @@
 // Cada álbum tem um link próprio para enviar ao cliente: seusite/#album/NOME-DA-PASTA
 
 window.ALBUNS = [
+  {
+    pasta: 'cafe-michelin',
+    titulo: 'Café Michelin',
+    categoria: 'evento',
+    local: '',
+    data: '',
+    descricao: 'Café colonial e colheita de morangos: mesa farta, doces caseiros e passeio ao ar livre.',
+    capa: '08',
+    fotos: ['01 alto', '10 largo', '07 alto centro', '08 largo centro', '02 largo centro', '03 largo centro', '04 largo baixo', '05 largo centro', '06 largo centro', '09 largo']
+  },
+
   {
     pasta: 'felipe-e-ellen',
     titulo: 'Felipe e Ellen',

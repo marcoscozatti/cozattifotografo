@@ -45,7 +45,14 @@
       var partes = String(f).trim().split(/\s+/);
       var nome = partes[0];
       if (!/\.[a-z0-9]+$/i.test(nome)) nome += '.jpg';
-      return { tipo: 'foto', src: base + nome, mini: base + 'mini/' + nome, destaque: partes[1] || '' };
+      var opc = partes.slice(1);
+      var POS = { centro: '50% 50%', baixo: '50% 85%', topo: '50% 0%' };
+      var pos = opc.filter(function (o) { return POS[o]; })[0];
+      return {
+        tipo: 'foto', src: base + nome, mini: base + 'mini/' + nome,
+        destaque: opc.indexOf('largo') !== -1 ? 'largo' : opc.indexOf('alto') !== -1 ? 'alto' : '',
+        posicao: pos ? POS[pos] : ''
+      };
     });
     (a.videos || []).forEach(function (v) {
       if (v && v.youtube) itens.push({ tipo: 'video', youtube: v.youtube, titulo: v.titulo || '', destaque: v.destaque || '' });
@@ -164,7 +171,9 @@
           '<span class="gallery__play">' + ICONE_PLAY + '</span>' +
           (item.titulo ? '<span class="gallery__caption"><span class="gallery__title">' + escapar(item.titulo) + '</span></span>' : '');
       } else {
-        el.appendChild(imagem(item, rotulo, function () { el.remove(); })); // foto que não existe some da grade
+        var im = imagem(item, rotulo, function () { el.remove(); }); // foto que não existe some da grade
+        if (item.posicao) im.style.objectPosition = item.posicao;
+        el.appendChild(im);
       }
       el.addEventListener('click', function () { abrir(idx); });
       grade.appendChild(el);
