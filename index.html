@@ -178,22 +178,41 @@
     </section>
 
     <!-- ===== PORTFÓLIO ===== -->
-    <!-- Os itens da galeria são editados em js/galeria-dados.js -->
+    <!-- Os álbuns são editados em js/albuns-dados.js (fotos em img/albuns/NOME-DO-ALBUM/) -->
     <section class="section" id="portfolio">
       <div class="container">
         <div class="section__head reveal">
           <p class="eyebrow">Portfólio</p>
           <h2 class="section__title">Momentos que já registrei</h2>
-          <p class="section__sub">Casamentos em Jundiaí e região e filmagens aéreas com drone.</p>
+          <p class="section__sub">Escolha um álbum para ver as fotos: casamentos, ensaios e filmagens aéreas com drone.</p>
         </div>
 
-        <div class="filters reveal" id="galeriaFiltros" role="tablist" aria-label="Filtrar portfólio">
-          <button class="filter is-active" data-filtro="todos" role="tab" aria-selected="true">Todos</button>
-          <button class="filter" data-filtro="casamento" role="tab" aria-selected="false">Casamentos</button>
-          <button class="filter" data-filtro="drone" role="tab" aria-selected="false">Drone</button>
+        <!-- Lista de álbuns -->
+        <div id="albunsLista">
+          <div class="filters reveal" id="galeriaFiltros" role="tablist" aria-label="Filtrar álbuns">
+            <button class="filter is-active" data-filtro="todos" role="tab" aria-selected="true">Todos</button>
+            <button class="filter" data-filtro="casamento" role="tab" aria-selected="false">Casamentos</button>
+            <button class="filter" data-filtro="ensaio" role="tab" aria-selected="false">Ensaios</button>
+            <button class="filter" data-filtro="drone" role="tab" aria-selected="false">Drone</button>
+          </div>
+          <div class="albums" id="albuns"></div>
+          <p class="albums__vazio" id="albunsVazio" hidden>Em breve novos álbuns nesta categoria.</p>
         </div>
 
-        <div class="gallery" id="galeria"></div>
+        <!-- Álbum aberto -->
+        <div class="album-view" id="albumAberto" hidden>
+          <div class="album-view__head">
+            <button class="album-view__back" id="albumVoltar" type="button">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 18-6-6 6-6"/></svg>
+              Voltar aos álbuns
+            </button>
+            <p class="album-view__tag" id="albumTag"></p>
+            <h3 class="album-view__title" id="albumTitulo" tabindex="-1"></h3>
+            <p class="album-view__meta" id="albumMeta"></p>
+            <p class="album-view__desc" id="albumDesc"></p>
+          </div>
+          <div class="gallery" id="galeria"></div>
+        </div>
 
         <div class="gallery__more reveal">
           <a class="btn btn--ghost" id="galeriaInstagram" href="#" target="_blank" rel="noopener">Ver mais no Instagram</a>
@@ -302,7 +321,7 @@
   </div>
 
   <script src="js/config.js"></script>
-  <script src="js/galeria-dados.js"></script>
+  <script src="js/albuns-dados.js"></script>
   <script src="js/main.js"></script>
   <script src="js/galeria.js"></script>
 </body>
