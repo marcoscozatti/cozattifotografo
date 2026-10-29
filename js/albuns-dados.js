@@ -48,6 +48,19 @@ window.ALBUNS = [
   },
 
   {
+    pasta: 'ensaio-marcos-eduardo',
+    titulo: 'Ensaio Marcos Eduardo',
+    categoria: 'ensaio',
+    local: '',
+    data: '',
+    descricao: 'Retratos em ambiente aconchegante, com leveza, cor e muitos sorrisos.',
+    capa: '04',
+    colunas: 5,
+    fotos: ['06 largo', '01 alto', '02 alto', '03 alto', '07 largo', '04 alto', '05 alto', '08 alto', '09 alto', '10 alto',
+            '11 alto', '12 alto', '13 alto', '15 alto', '14 alto']
+  },
+
+  {
     pasta: 'ensaio-eduardo-falico',
     titulo: 'Ensaio Eduardo Falico',
     categoria: 'ensaio',
