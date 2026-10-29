@@ -33,6 +33,17 @@
 
 window.ALBUNS = [
   {
+    pasta: 'raissa-e-jhon',
+    titulo: 'Raissa e Jhon',
+    categoria: 'casamento',
+    local: '',
+    data: '',
+    descricao: 'Casamento ao ar livre com vista para as montanhas: chuva de confete, brinde com os padrinhos e muito carinho.',
+    capa: '06',
+    fotos: ['01 largo', '02', '03', '04 largo', '05', '06', '07 largo', '08 centro', '09']
+  },
+
+  {
     pasta: 'casamento-da-cida',
     titulo: 'Casamento da Cida',
     categoria: 'casamento',
