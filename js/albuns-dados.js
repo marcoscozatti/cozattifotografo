@@ -35,6 +35,17 @@ window.ALBUNS = [
   },
 
   {
+    pasta: 'roberto-e-rosana',
+    titulo: 'Roberto e Rosana',
+    categoria: 'casamento',
+    local: '',
+    data: '',
+    descricao: 'Cerimônia na igreja: a entrada da noiva, os votos e a troca de alianças.',
+    capa: '02',
+    fotos: ['04 largo', '02 largo', '06 alto', '01 alto', '05 alto', '03 alto']
+  },
+
+  {
     pasta: 'joao-barbearia',
     titulo: 'João Barbearia',
     categoria: 'ensaio',
