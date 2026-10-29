@@ -362,7 +362,7 @@ a.album:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; 
     repeating-linear-gradient(45deg, transparent 0 12px, rgba(127,127,127,.06) 12px 24px),
     var(--bg-alt);
 }
-.album__cover img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.album__cover img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; transition: transform .6s ease; }
 a.album:hover .album__cover img { transform: scale(1.06); }
 .album__soon { position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); font-size: .9rem; }
 .album__body { display: grid; gap: 4px; padding: 18px 20px 20px; }
@@ -420,6 +420,7 @@ a.album:hover .album__cover img { transform: scale(1.06); }
 .gallery__item img {
   width: 100%; height: 100%;
   object-fit: cover;
+  object-position: 50% 25%; /* prioriza a parte de cima (rostos) */
   transition: transform .6s ease;
 }
 .gallery__item:hover img { transform: scale(1.06); }

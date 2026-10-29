@@ -34,10 +34,21 @@ window.ALBUNS = [
     fotos: ['07 largo', '03 alto', '02', '06', '08', '04 largo', '05', '09', '10', '12 largo', '13', '01', '11']
   },
 
-  // ---- Modelo de ensaio (tire as barras // do começo das linhas quando as fotos estiverem na pasta) ----
+  {
+    pasta: 'joao-barbearia',
+    titulo: 'João Barbearia',
+    categoria: 'ensaio',
+    local: '',
+    data: '',
+    descricao: 'Ensaio na barbearia: o barbeiro em ação, os detalhes do corte e retratos.',
+    capa: '08',
+    fotos: ['08 largo', '01 alto', '02 alto', '09 largo', '07 alto', '03 alto', '05 alto', '06 alto', '12 alto', '04 alto', '10 alto', '11 alto']
+  },
+
+  // ---- Modelo para um álbum novo (tire as barras // do começo das linhas quando as fotos estiverem na pasta) ----
   // {
-  //   pasta: 'ensaio-joao-barbero',
-  //   titulo: 'Ensaio João Barbero',
+  //   pasta: 'nome-do-album',
+  //   titulo: 'Nome do álbum',
   //   categoria: 'ensaio',
   //   local: '',
   //   data: '',
