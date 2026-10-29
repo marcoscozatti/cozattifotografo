@@ -65,7 +65,8 @@
     return {
       pasta: a.pasta, titulo: a.titulo || a.pasta, categoria: a.categoria || '',
       local: a.local || '', data: a.data || '', descricao: a.descricao || '',
-      capa: capa, itens: itens, nFotos: nFotos, nVideos: nVideos
+      capa: capa, itens: itens, nFotos: nFotos, nVideos: nVideos,
+      colunas: Number(a.colunas) || 0
     };
   }
 
@@ -140,6 +141,7 @@
   function abrirAlbum(a, rolar) {
     albumAtual = a;
     grade.innerHTML = '';
+    if (a.colunas) grade.style.setProperty('--colunas', a.colunas); else grade.style.removeProperty('--colunas');
     document.getElementById('albumTag').textContent = ROTULO[a.categoria] || a.categoria;
     document.getElementById('albumTitulo').textContent = a.titulo;
     document.getElementById('albumMeta').textContent = [contagem(a), a.local, a.data].filter(Boolean).join(' • ');

@@ -16,6 +16,8 @@
 //       fotos     -> a ordem das fotos. Escreva o número; acrescente ' largo' (foto deitada que
 //                    ocupa 2 colunas) ou ' alto' (foto em pé que ocupa 2 linhas) se quiser destacar.
 //                    Atalho: se colocar só um número (ex.: fotos: 25), o site usa 01 até 25 em ordem.
+//       colunas   -> opcional. Quantas colunas a grade usa no computador (o normal é 4).
+//                    Ex.: 5 fotos em pé com ' alto' ficam perfeitas com colunas: 5.
 //       videos    -> opcional. Códigos de vídeos do YouTube. Em https://www.youtube.com/watch?v=AbC123xYz
 //                    o código é AbC123xYz.
 //
@@ -43,6 +45,18 @@ window.ALBUNS = [
     descricao: 'Cerimônia na igreja: a entrada da noiva, os votos e a troca de alianças.',
     capa: '02',
     fotos: ['04 largo', '02 largo', '06 alto', '01 alto', '05 alto', '03 alto']
+  },
+
+  {
+    pasta: 'ensaio-eduardo-falico',
+    titulo: 'Ensaio Eduardo Falico',
+    categoria: 'ensaio',
+    local: '',
+    data: '',
+    descricao: 'Ensaio corporativo: retratos profissionais com estilo e personalidade.',
+    capa: '05',
+    colunas: 5,
+    fotos: ['05 alto', '01 alto', '02 alto', '04 alto', '03 alto']
   },
 
   {
