@@ -74,7 +74,8 @@
       pasta: a.pasta, titulo: a.titulo || a.pasta, categoria: a.categoria || '',
       local: a.local || '', data: a.data || '', descricao: a.descricao || '',
       capa: capa, itens: itens, nFotos: nFotos, nVideos: nVideos,
-      colunas: Number(a.colunas) || 0
+      colunas: Number(a.colunas) || 0,
+      oculto: !!a.oculto
     };
   }
 
@@ -100,6 +101,7 @@
 
   // ---------- Lista de álbuns ----------
   albuns.forEach(function (a) {
+    if (a.oculto) return; // álbum oculto: só abre pelo link direto
     var vazio = a.itens.length === 0;
     var el = document.createElement(vazio ? 'div' : 'a');
     el.className = 'album' + (vazio ? ' is-empty' : '');

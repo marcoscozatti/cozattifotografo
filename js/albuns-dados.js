@@ -23,6 +23,8 @@
 //                    Atalho: se colocar só um número (ex.: fotos: 25), o site usa 01 até 25 em ordem.
 //       colunas   -> opcional. Quantas colunas a grade usa no computador (o normal é 4).
 //                    Ex.: 5 fotos em pé com ' alto' ficam perfeitas com colunas: 5.
+//       oculto    -> opcional. Com oculto: true o álbum NÃO aparece na lista do site; só abre
+//                    pelo link direto (bom para festas com crianças: envie o link só à família).
 //       videos    -> opcional. Códigos de vídeos do YouTube. Em https://www.youtube.com/watch?v=AbC123xYz
 //                    o código é AbC123xYz.
 //
@@ -50,6 +52,19 @@ window.ALBUNS = [
     descricao: 'Café colonial e colheita de morangos: mesa farta, doces caseiros e passeio ao ar livre.',
     capa: '08',
     fotos: ['01 alto', '10 largo', '07 alto centro', '08 largo centro', '02 largo centro', '03 largo centro', '04 largo baixo', '05 largo centro', '06 largo centro', '09 largo']
+  },
+
+  {
+    pasta: 'aniversario-michaella-10-anos',
+    titulo: 'Aniversário 10 anos da Michaella',
+    categoria: 'evento',
+    oculto: true, // aguardando autorização das famílias para aparecer na lista
+    local: '',
+    data: '',
+    descricao: 'Festa com tema de Harry Potter: bolo de Hogwarts, família reunida, piquenique e pista de dança.',
+    capa: '14',
+    fotos: ['14 largo', '20 largo', '01', '12', '13', '11', '02 largo', '09', '10 alto', '18 largo', '19 alto',
+            '17 largo', '03', '04', '05', '06', '07 largo', '08', '15', '16']
   },
 
   {
