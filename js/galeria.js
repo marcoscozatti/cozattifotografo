@@ -50,7 +50,8 @@
       var pos = opc.filter(function (o) { return POS[o]; })[0];
       return {
         tipo: 'foto', src: base + nome, mini: base + 'mini/' + nome,
-        destaque: opc.indexOf('largo') !== -1 ? 'largo' : opc.indexOf('alto') !== -1 ? 'alto' : '',
+        destaque: opc.indexOf('grande') !== -1 ? 'grande' : opc.indexOf('largo') !== -1 ? 'largo' : opc.indexOf('alto') !== -1 ? 'alto' : '',
+        inteira: opc.indexOf('inteira') !== -1,
         posicao: pos ? POS[pos] : ''
       };
     });
@@ -160,7 +161,8 @@
       var el = document.createElement('button');
       el.type = 'button';
       el.className = 'gallery__item' +
-        (item.destaque === 'largo' ? ' gallery__item--wide' : item.destaque === 'alto' ? ' gallery__item--big' : '');
+        (item.destaque === 'largo' ? ' gallery__item--wide' : item.destaque === 'alto' ? ' gallery__item--big' : item.destaque === 'grande' ? ' gallery__item--grande' : '') +
+        (item.inteira ? ' gallery__item--inteira' : '');
       el.dataset.idx = idx;
       var rotulo = item.tipo === 'video' ? (item.titulo || 'Vídeo') : a.titulo + ', foto ' + (idx + 1);
       el.setAttribute('aria-label', (item.tipo === 'video' ? 'Assistir vídeo: ' : 'Ampliar ') + rotulo);

@@ -18,6 +18,8 @@
 //                    Enquadramento: acrescente ' centro', ' baixo' ou ' topo' para escolher a parte da
 //                    foto que aparece na grade (o normal prioriza a parte de cima, onde ficam os rostos).
 //                    Ex.: '04 largo centro'
+//                    ' grande' ocupa 2 colunas e 2 linhas; ' inteira' mostra a foto toda, sem cortar
+//                    (bom para artes com texto). Ex.: '06 grande inteira'
 //                    Atalho: se colocar só um número (ex.: fotos: 25), o site usa 01 até 25 em ordem.
 //       colunas   -> opcional. Quantas colunas a grade usa no computador (o normal é 4).
 //                    Ex.: 5 fotos em pé com ' alto' ficam perfeitas com colunas: 5.
@@ -28,6 +30,17 @@
 // Cada álbum tem um link próprio para enviar ao cliente: seusite/#album/NOME-DA-PASTA
 
 window.ALBUNS = [
+  {
+    pasta: 'fundacao-casa',
+    titulo: 'Fotos dos alunos da Fundação Casa',
+    categoria: 'evento',
+    local: '',
+    data: '',
+    descricao: 'Fotografia de produto com os alunos da Fundação Casa: hambúrguer em estúdio e artes para redes sociais.',
+    capa: '04',
+    fotos: ['06 grande inteira', '02 alto', '03 alto', '01 largo centro', '05 alto', '07 alto inteira', '04 largo centro']
+  },
+
   {
     pasta: 'cafe-michelin',
     titulo: 'Café Michelin',

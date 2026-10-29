@@ -415,6 +415,9 @@ a.album:hover .album__cover img { transform: scale(1.06); }
 .gallery__item[hidden] { display: none; }
 .gallery__item--big { grid-row: span 2; }
 .gallery__item--wide { grid-column: span 2; }
+.gallery__item--grande { grid-column: span 2; grid-row: span 2; }
+.gallery .gallery__item.gallery__item--inteira img { object-fit: contain; object-position: 50% 50%; }
+.gallery .gallery__item.gallery__item--inteira:hover img { transform: scale(1.02); }
 @keyframes aparecer { from { opacity: 0; transform: scale(.97); } }
 
 .gallery__item img {
