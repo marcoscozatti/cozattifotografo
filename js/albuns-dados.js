@@ -77,6 +77,18 @@ window.ALBUNS = [
   },
 
   {
+    pasta: 'giovana-15-anos',
+    titulo: 'Aniversário 15 anos da Giovana',
+    categoria: 'evento',
+    oculto: true, // só abre pelo link direto, como o da Michaella
+    local: '',
+    data: '',
+    descricao: 'Festa de debutante em tons de lilás: o bolo, a dupla exposição e a valsa.',
+    capa: '02',
+    fotos: ['03 alto', '04 alto', '05 alto', '02', '01']
+  },
+
+  {
     pasta: 'aniversario-michaella-10-anos',
     titulo: 'Aniversário 10 anos da Michaella',
     categoria: 'evento',
